@@ -10,7 +10,7 @@ public class CuentaBancaria {
 	public boolean deposito(double aDepositar){
 		if (aDepositar > 0 ){ 
 				this.saldo= this.saldo+aDepositar;
-				System.out.println("El Deposito fue exítoso y su saldo quedo en "+this.saldo);
+				System.out.println("El Deposito fue exÃ­toso y su saldo quedo en "+this.saldo);
 				return true;
 		}else{
 			System.out.println("Ha ingresado un valor negativo.");
@@ -19,9 +19,9 @@ public class CuentaBancaria {
 
 	}
 	public boolean extraer(double aExtraer){
-		if (aExtraer > 0 && aExtraer < this.saldo ){
+		if (aExtraer > 0 && aExtraer <= this.saldo ){
 			this.saldo= this.saldo - aExtraer;
-			System.out.println("Se ha extraido satisfactoriamente: "+aExtraer+"y ahora su saldo quedo en: "+ this.saldo );
+			System.out.println("Se ha extraido satisfactoriamente: "+aExtraer+" y ahora su saldo quedo en: "+ this.saldo );
 			return true;
 		}else{
 			System.out.println("Ha ingresado un valor negativo o el valor que desea extraer supera al saldo actual en la cuenta.");
