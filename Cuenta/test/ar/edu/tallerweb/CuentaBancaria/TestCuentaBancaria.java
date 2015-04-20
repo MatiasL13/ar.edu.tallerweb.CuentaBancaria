@@ -19,7 +19,7 @@ public class TestCuentaBancaria {
 		CuentaBancaria cuentaPrueba=new CuentaBancaria(1500.0);		
 		Assert.assertTrue(cuentaPrueba.extraer(80.0)==true);
 		Assert.assertTrue(cuentaPrueba.extraer(1420.0)==true);
-		Assert.assertTrue(cuentaPrueba.extraer(10)==true);
+		Assert.assertTrue(cuentaPrueba.extraer(10)==false);
 	}
 	@Test
 	public void testGetSaldo(){
